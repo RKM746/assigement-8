@@ -1,0 +1,190 @@
+.header{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+.footer{
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 37%;
+    color: #663c0d;
+}
+.next{
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 47%;
+    color: #8f13b4;
+}
+.back{
+    font-size: 2em;
+    font-weight: 700;
+    color:#f81244 ;
+    position: absolute;
+    top: 0px;
+}
+
+.animation{
+    background-image: url(./sky.jpg);
+    width: auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+    overflow-x: hidden;
+}
+.sun{
+    width: 350px;
+    position: absolute;
+    left: 80%;
+    top: 170px;
+
+}
+.sun img{
+    width: 200px;
+    animation: sun 120s linear infinite;
+}
+.road{
+    position: absolute;
+    width: 500%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    background-image: url(./Road.jpg);
+    filter: brightness(50%);
+    animation: road 6s linear infinite;
+}
+.skyscraper{
+    position: absolute;
+    width: 500%;
+    height: 200px;
+    bottom: 200px;
+    left: 0px;
+    right: 0px;
+    background-image: url(./city.png);
+    animation: skyscraper 30s linear infinite;
+}
+.car{
+    position: absolute;
+    width: 400px;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    
+
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car {
+    100%{transform: translateY(-1px);}
+    50%{transform: translateY(1px);}
+    0%{transform: translateY(-1px);}
+}
+.wheel{
+    position: absolute;
+    left: 50%;
+    bottom: 175px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.wheel img {
+    width: 70px;
+    height: 70px;
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.backwheel{
+    left: -167px;
+    position: absolute;
+}
+.frontwheel{
+    left: 80px;
+    position: absolute;
+}
+.flag{
+    position: absolute;
+    left: 50%;
+    bottom: 245px;
+    z-index: 3;
+}
+.flag img{
+    width: 72px;
+    height: 72px;
+    
+}
+.indiaflag{
+    position: absolute;
+    left: 80px;
+}
+.text{
+    display: flex;
+    margin-left: 36%;
+    font-size: 50px;
+    font-weight: 800;
+}
+.text1{
+    margin-left: 0.4em;
+    background-color: orangered;
+}
+.text2{
+    margin-left: 0.4em;
+    background-color: white;;
+}
+.text3{
+    margin-left: 0.4em;
+    background-color: greenyellow;
+}
+@keyframes sun {
+    100%{
+        transform: translateX(-400px);
+    }
+}
+
+@keyframes flag {
+    50%{transform: translateY(-2px);}
+    75%{transform: translateX(-500px);}
+    100%{transform: translateY(0px) translateX(0px) ;}
+}
+
+
+@keyframes skyscraper {
+    100%{transform: translateX(-2400px);}
+}
+@keyframes road {
+    100%{transform: translateX(-3400px);}
+}
+@keyframes subbox2_1 {
+    50%{transform: skewY(20deg);}
+    100%{transform: skewY(-20deg);}
+}
+@keyframes subbox1_1 {
+    50%{transform: skewX(20deg);}
+    100%{transform: skewX(-20deg);}
+}
+@keyframes subbox3_1 {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@keyframes subbox4_1_1 {
+    0%{transform: scale(1,1);}
+    50%{transform: scale(1,0.5);}
+    100%{transform: scale(1,1);}
+}
+@keyframes subbox4_1_2 {
+    0%{transform: scale(1,1);}
+    50%{transform: scale(0.5,1);}
+    100%{transform: scale(1,1);}
+}
+@keyframes subbox4_1_3 {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(100deg);}
+    100%{transform: rotate(0deg);}
+}

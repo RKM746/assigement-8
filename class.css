@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background-color{
+    background-color: grey;
+}
+.header{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+.footer{
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 37%;
+    color: #663c0d;
+}
+.next{
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 47%;
+    color: #8f13b4;
+}
+.back{
+    font-size: 2em;
+    font-weight: 700;
+    color:#f81244 ;
+    position: absolute;
+    top: 0px;
+}
+.subbox{
+    display: flex;
+    margin: 5em 0 0 33%;
+}
+.subbox1_1{
+    background-color: #8f13b4;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    transform: skewX(-20deg);
+    margin-left: 4em;
+    animation-name: subbox1_1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;    
+}
+.subbox2_1{
+    background-color: #c44cd7;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin-left: 4em;
+    transform: skewY(-20deg);
+    animation-name: subbox2_1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite; 
+}
+.subbox3_1{
+    background-color: rgb(36, 36, 200);
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin-left: 4em;
+    animation-name: subbox3_1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.subbox4_1{
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    margin-left: 4em;
+}
+.no{
+    margin-left: 33%;
+}
+.subbox4_2{
+    background-color: burlywood;
+    border-color: #105652;
+    animation-name: subbox4_1_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.subbox4_3{
+    background-color: brown;
+    border-color: #3F3351;
+    animation-name: subbox4_1_2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.subbox4_4{
+    background-color: goldenrod;
+    border-color: #8ee783;
+    animation-name: subbox4_1_3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+ 
